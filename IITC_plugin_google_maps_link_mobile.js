@@ -2,9 +2,9 @@
 // @id             iitc-plugin-google-maps-link-mobile@q
 // @name           IITC plugin: Google Maps Link
 // @category       Portal Info
-// @version        1.0.0.20210916
-// @updateURL      https://github.com/q82/q_iitc_plugins/raw/master/IITC_plugin_google_maps_link_mobile.js
-// @downloadURL    https://github.com/q82/q_iitc_plugins/raw/master/IITC_plugin_google_maps_link_mobile.js
+// @version        1.0.0.20210928
+// @updateURL      https://raw.githubusercontent.com/q82/q_iitc_plugins/main/IITC_plugin_google_maps_link_mobile.js
+// @downloadURL    https://raw.githubusercontent.com/q82/q_iitc_plugins/main/IITC_plugin_google_maps_link_mobile.js
 // @description    Force show link to google maps in portal info for mobile.
 // @include        *://*.ingress.com/mission/*
 // @include        *://intel.ingress.com/*
