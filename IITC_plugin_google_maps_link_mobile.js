@@ -26,10 +26,11 @@ function wrapper(plugin_info) {
     // PLUGIN START ////////////////////////////////////////////////////////
     window.plugin.googleMapsLink = {
         onPortalSelected: function (event) {
-            /*console.log('jedynka');
+            /*
             if (event.selectedPortalGuid === event.unselectedPortalGuid) {
                 return;
-            }*/
+            }
+            */
             if (window.selectedPortal === null) {
                 return;
             }
