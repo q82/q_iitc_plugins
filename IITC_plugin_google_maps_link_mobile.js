@@ -2,7 +2,7 @@
 // @id             iitc-plugin-google-maps-link-mobile@q
 // @name           IITC plugin: Google Maps Link
 // @category       Portal Info
-// @version        1.0.0.20210928
+// @version        1.0.0.20210929
 // @updateURL      https://raw.githubusercontent.com/q82/q_iitc_plugins/main/IITC_plugin_google_maps_link_mobile.js
 // @downloadURL    https://raw.githubusercontent.com/q82/q_iitc_plugins/main/IITC_plugin_google_maps_link_mobile.js
 // @description    Force show link to google maps in portal info for mobile.
@@ -32,6 +32,7 @@ function wrapper(plugin_info) {
             if (window.selectedPortal === null) {
                 return;
             }
+            
             let portal = window.portals[window.selectedPortal];
             if (!portal) {
                 return;
