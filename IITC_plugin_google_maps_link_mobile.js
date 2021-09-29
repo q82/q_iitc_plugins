@@ -2,7 +2,7 @@
 // @id             iitc-plugin-google-maps-link-mobile@q
 // @name           IITC plugin: Google Maps Link
 // @category       Portal Info
-// @version        1.0.0.20210929
+// @version        1.0.1.20210929
 // @updateURL      https://raw.githubusercontent.com/q82/q_iitc_plugins/main/IITC_plugin_google_maps_link_mobile.js
 // @downloadURL    https://raw.githubusercontent.com/q82/q_iitc_plugins/main/IITC_plugin_google_maps_link_mobile.js
 // @description    Force show link to google maps in portal info for mobile.
@@ -16,6 +16,7 @@
 /*
 ********* What's New?
 * 1.0.0 : Initial relase.
+* 1.0.1 : Fix with duplicate generate link in portal info.
 */
 
 function wrapper(plugin_info) {
@@ -26,7 +27,7 @@ function wrapper(plugin_info) {
     // PLUGIN START ////////////////////////////////////////////////////////
     window.plugin.googleMapsLink = {
         onPortalSelected: function (event) {
-            if (event.selectedPortalGuid === event.unselectedPortalGuid) {
+            if (event.selectedPortalGuid === event.unselectedPortalGuid && $('a#ip-gmlm-q').length > 0) {
                 return;
             }
             if (window.selectedPortal === null) {
@@ -52,7 +53,7 @@ function wrapper(plugin_info) {
             }
 
             setTimeout(function () {
-                $('.linkdetails').append('<aside><a target="_blank" rel="noopener noreferrer" tabindex="0" href="' + googleMapsUrl + '" >Google Maps Link</a></aside>');
+                $('.linkdetails').append('<aside><a id="ip-gmlm-q" target="_blank" rel="noopener noreferrer" tabindex="0" href="' + googleMapsUrl + '" >Google Maps Link</a></aside>');
             }, 0);
         }
     };
