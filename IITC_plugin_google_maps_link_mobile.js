@@ -26,11 +26,9 @@ function wrapper(plugin_info) {
     // PLUGIN START ////////////////////////////////////////////////////////
     window.plugin.googleMapsLink = {
         onPortalSelected: function (event) {
-            /*
             if (event.selectedPortalGuid === event.unselectedPortalGuid) {
                 return;
             }
-            */
             if (window.selectedPortal === null) {
                 return;
             }
